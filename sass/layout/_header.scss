@@ -1,15 +1,25 @@
 @import 'nav';
-.wrapper {
-        header {
-            display: flex;
-            background-color: #eeeeee;
-            justify-content: space-between;
 
-            .logo {
-                width: 80px;
-                height: 80px;
-                background-color: #858585;
+.wrapper {
+    header {
+        display: flex;
+        background-color: #eeeeee;
+        justify-content: space-between;
+
+        .logo {
+            width: 80px;
+            height: 80px;
+
+            @include t() {
+                width: 40px;
+                height: 40px;
             }
+            @include m(){
+                background-color: #ff0000;
+            }
+
+            background-color: #858585;
+        }
     }
 
 }
