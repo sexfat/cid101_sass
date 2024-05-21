@@ -1,6 +1,8 @@
 //字體尺寸
 // 內文字
 $fontBase: 16px; // 數字 註解
+$lineheight: $fontBase * 1.4;
+$letterSpacing : 1px;
 
 //標題字
  $h1 : 40px;
@@ -10,3 +12,9 @@ $fontBase: 16px; // 數字 註解
   $desc : 12px;  
 
 // 按鈕字大小
+
+// table th td 文字大小
+$tableTh :14px;
+
+// form 字體大小
+$input : $fontBase *.8 ;
