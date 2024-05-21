@@ -1,0 +1,16 @@
+@import 'nav';
+.wrapper {
+    .row {
+        header {
+            display: flex;
+            background-color: #eeeeee;
+
+            .logo {
+                width: 80px;
+                height: 80px;
+                background-color: #858585;
+            }
+        }
+    }
+
+}

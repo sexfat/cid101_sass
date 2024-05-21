@@ -1,0 +1,13 @@
+body {
+    //$a : 20 !global; 新版的sass不支援 區域變數轉全域，但可以執行，我們比較少用  
+    padding: 0;
+    margin: $margin;
+    font-size: $fontBase;
+    background-color: $bgc;
+    color: $color
+}
+
+.content {
+   background-color: #fffd95;
+   min-height: 500px;
+}
