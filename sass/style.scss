@@ -73,13 +73,34 @@ $d : 150 !default;
 .dark {
     background-color: darken(#fff, 100);
 }
+
 .light {
-      background-color: lighten( #000 , 100);
+    background-color: lighten(#000, 100);
 }
 
 //  數字運算函式
 .number {
-   font-size: ceil(100.4px) ;
-   font-size: round(100.5px) ;
-   font-size: floor(100.4px) ;
+    font-size: ceil(100.4px);
+    font-size: round(100.5px);
+    font-size: floor(100.4px);
 }
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #95ff00;
+
+
+}
+
+@mixin push($dir , $value) {
+    @for $i from 1 through $value {
+        .#{$dir}-#{$i} {
+            position: relative;
+            #{$dir}: $i + px;
+        }
+    }
+}
+
+@include push(left , 100);
+@include push(top , 100)
