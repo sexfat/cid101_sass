@@ -1311,16 +1311,19 @@ body {
   top: 100px;
 }
 
-.img-slider1 {
-  background-image: url("images/slider1.jpg");
+.img-a1 {
+  background-image: url("images/a1.jpg");
+  background-size: cover;
 }
 
-.img-slider2 {
-  background-image: url("images/slider2.jpg");
+.img-a2 {
+  background-image: url("images/a2.jpg");
+  background-size: cover;
 }
 
-.img-slider3 {
-  background-image: url("images/slider3.jpg");
+.img-a3 {
+  background-image: url("images/a3.jpg");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

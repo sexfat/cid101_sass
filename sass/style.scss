@@ -98,11 +98,19 @@ $d : 150 !default;
 @include push(left, 100);
 @include push(top, 100);
 
-// each
-$img :slider1 slider2 slider3;
+// each loop
+$img :slider1 slider2 slider3; //list
 
-@each $i in $img {
-    .img-#{$i} {
-        background-image: url('images/#{$i}.jpg');
+@mixin img($img){
+    @each $i in $img {
+        .img-#{$i} {
+            background-image: url('images/#{$i}.jpg');
+            background-size: cover;
+        }
     }
 }
+
+@include img(a1 a2 a3);
+
+
+// each loop h1 - h6
