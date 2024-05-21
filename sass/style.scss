@@ -40,3 +40,18 @@ $d : 150 !default;
     left: $d
 }
 
+
+@mixin a(){
+  width: 100px;
+  span {
+    @content;
+  }
+}
+
+
+.a {
+ @include a(){
+    height: 100px;
+ }
+}
+

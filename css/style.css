@@ -1,18 +1,99 @@
-/* Error: Expected whitespace.
- *    ,
- * 45 |     @media screen and(max-width:$t) {
- *    |                      ^
- *    '
- *   sass\mixin\_mixin.scss 45:22  @import
- *   sass\style.scss 12:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected whitespace.\a    \2577 \a 45 \2502      @media screen and(max-width:$t) {\d\a    \2502                       ^\a    \2575 \a   sass\\mixin\\_mixin.scss 45:22  @import\a   sass\\style.scss 12:9          root stylesheet";
+@charset "UTF-8";
+/*css註解*/
+.logo {
+  position: relative;
+  top: 0px;
 }
+
+nav {
+  position: relative;
+  top: 0px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  width: 120px;
+  margin: 0 10px;
+  background-color: #d6d6d6;
+}
+nav ul li a {
+  text-decoration: none;
+  background-color: rgb(48, 48, 235);
+  padding: 5px 10px;
+  color: #fff;
+  display: block;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #1010a5;
+}
+nav ul li a::before {
+  content: " + ";
+}
+
+.wrapper header {
+  display: flex;
+  background-color: #eeeeee;
+  justify-content: space-between;
+}
+.wrapper header .logo {
+  width: 80px;
+  height: 80px;
+  background-color: #858585;
+}
+
+footer {
+  width: 100%;
+  min-height: 400px;
+  background-color: #fbb793;
+}
+
+body {
+  padding: 0;
+  margin: 10px auto;
+  font-size: 16px;
+  background-color: #eee;
+  color: #333;
+}
+
+.content {
+  background-color: #fffd95;
+  min-height: 500px;
+}
+
+.row {
+  width: 100%;
+}
+
+.row-fixed {
+  width: 1200px;
+  margin: auto;
+}
+
+.index .banner {
+  width: 100%;
+  height: 300px;
+  background-color: #d2d2d2;
+}
+
+.about .banner {
+  width: 100%;
+  height: 150px;
+  background-color: #d2d2d2;
+}
+
+.spacing-1 {
+  left: 300;
+}
+
+.a {
+  width: 100px;
+}
+.a span {
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -42,16 +42,19 @@ nav {
 //RWD mixin
 //平版
 @mixin t(){
-    @media screen and(max-width:$t) {
+    @media screen and (max-width:$t) {
        @content;
     }
 }
 //手機
 @mixin m(){
-    @media screen and(max-width:$m) {
+    @media screen and (max-width:$m) {
         @content;
     }
 }
+
+// @include t(){}
+// @include m(){}
 
 
 
