@@ -96,15 +96,15 @@ body {
     margin: auto;
   }
 }
+@media screen and (max-width: 720px) {
+  .index .banner {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 500px) {
   .index .banner {
     font-size: 80px;
     color: #fff;
-  }
-}
-@media screen and (max-width: 720px) {
-  .index .banner {
-    width: 100%;
   }
 }
 

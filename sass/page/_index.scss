@@ -9,14 +9,14 @@
             background-color: #fb3333;
             @include layout(90);
         }
-        @include bp(500px){
-            font-size: 80px;
-            color: #fff;
-
-        }
         @include m(){
             @include layout(100);
         }
+        @include bp(500px){
+            font-size: 80px;
+            color: #fff;
+        }
+       
     }
 
 
