@@ -100,3 +100,32 @@ nav {
     }
 }
 
+
+@mixin img($img) {
+    @each $i in $img {
+        .img-#{$i} {
+            background-image: url('images/#{$i}.jpg');
+            background-size: cover;
+        }
+    }
+}
+
+// each loop h1 - h6
+@mixin title($title) {
+    @each $k , $v in $title {
+        #{$k} {
+            font-size: $v;
+        }
+    }
+}
+
+@mixin color($color) {
+    @each $k , $v in $color {
+        .#{$k} {
+            color: $v
+        }
+        .#{$k}-bg {
+            background-color: $v;
+        }
+    }
+}
