@@ -132,4 +132,12 @@ body {
   font: 10px;
 }
 
+.dark {
+  background-color: black;
+}
+
+.light {
+  background-color: white;
+}
+
 /*# sourceMappingURL=style.css.map */

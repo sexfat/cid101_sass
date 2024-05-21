@@ -3,6 +3,7 @@
 // @import url();
 // sass import
 
+//引用內建函式
 @use 'sass:math';
 
 // base 變數
@@ -44,31 +45,34 @@ $d : 150 !default;
 
 
 // content的用法
-@mixin a(){
-  width: 100px;
-  span {
-    @content;
-  }
+@mixin a() {
+    width: 100px;
+
+    span {
+        @content;
+    }
 }
+
 .a {
- @include a(){
-    height: 100px;
- }
+    @include a() {
+        height: 100px;
+    }
 }
 
 //運算子
-
 .cal {
-  width: 10 + 10px;
-  height: 100 - 10em ;
-  max-width:  10 * 10;
-//   font: (100 / 10) + px;
- font: math.div(100 , 10) + px;
-
+    width: 10 + 10px;
+    height: 100 - 10em;
+    max-width: 10 * 10;
+    //   font: (100 / 10) + px;
+    //除法
+    font: math.div(100, 10) + px;
 }
 
-
-
-
-
-
+//顏色內建函式
+.dark {
+    background-color: darken(#fff, 100);
+}
+.light {
+      background-color: lighten( #000 , 100);
+}
