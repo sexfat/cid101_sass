@@ -1,34 +1,17 @@
-@charset "UTF-8";
-/*css註解*/
-body {
-  padding: 0;
-  margin: 10px auto;
-  font-size: 16px;
-  background-color: #fff9c7;
-  color: #333;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 38 |     font-size: $fontSize;
+ *    |                ^^^^^^^^^
+ *    '
+ *   sass\style.scss 38:16  root stylesheet */
 
-.spacing-1 {
-  left: 300;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 38 \2502      font-size: $fontSize;\d\a    \2502                 ^^^^^^^^^\a    \2575 \a   sass\\style.scss 38:16  root stylesheet";
 }
-
-.wrapper .row header {
-  display: flex;
-  background-color: #eeeeee;
-}
-.wrapper .row header .logo {
-  width: 80px;
-  height: 80px;
-  background-color: #858585;
-}
-.wrapper .row header nav ul {
-  list-style: none;
-  display: flex;
-}
-.wrapper .row header nav ul li {
-  width: 120px;
-  margin: 0 10px;
-  background-color: #d6d6d6;
-}
-
-/*# sourceMappingURL=style.css.map */
