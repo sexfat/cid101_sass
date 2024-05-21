@@ -13,6 +13,7 @@ nav ul li {
 .wrapper .row header {
   display: flex;
   background-color: #eeeeee;
+  justify-content: space-between;
 }
 .wrapper .row header .logo {
   width: 80px;
@@ -30,7 +31,7 @@ body {
   padding: 0;
   margin: 10px auto;
   font-size: 16px;
-  background-color: #fff9c7;
+  background-color: #eee;
   color: #333;
 }
 
