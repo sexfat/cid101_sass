@@ -125,4 +125,11 @@ body {
   height: 100px;
 }
 
+.cal {
+  width: 20px;
+  height: 90em;
+  max-width: 100;
+  font: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
