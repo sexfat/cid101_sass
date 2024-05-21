@@ -9,6 +9,17 @@ nav ul li {
   margin: 0 10px;
   background-color: #d6d6d6;
 }
+nav ul li a {
+  text-decoration: none;
+  background-color: rgb(48, 48, 235);
+  padding: 5px 10px;
+  color: #fff;
+  display: block;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #1010a5;
+}
 
 .wrapper .row header {
   display: flex;

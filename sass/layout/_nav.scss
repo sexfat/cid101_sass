@@ -2,12 +2,25 @@ nav {
     ul {
         list-style: none;
         display: flex;
-       
+
 
         li {
             width: 120px;
             margin: 0 10px;
             background-color: #d6d6d6;
+
+            a {
+                text-decoration: none;
+                background-color: $primary;
+                padding: 5px 10px;
+                color: #fff;
+                display: block;
+                transition: all .3s ease;
+
+                &:hover {
+                    background-color: darken($primary , 20); //sass 內建函式
+                }
+            }
         }
     }
 }
