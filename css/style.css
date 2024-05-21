@@ -1,5 +1,15 @@
 @charset "UTF-8";
 /*css註解*/
+.logo {
+  position: relative;
+  top: 5px;
+}
+
+nav {
+  position: relative;
+  top: 10px;
+}
+
 nav ul {
   list-style: none;
   display: flex;

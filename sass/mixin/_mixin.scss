@@ -1,0 +1,18 @@
+//宣告
+
+
+//==== 位移 ===
+// @mixin top{}
+@mixin top($top){
+    position: relative;
+    top: $top;
+}
+
+//呼叫 top
+.logo {
+  @include top(5px);
+}
+nav {
+ @include top(10px);
+}
+
