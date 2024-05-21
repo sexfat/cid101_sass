@@ -101,7 +101,7 @@ $d : 150 !default;
 // each loop
 $img :slider1 slider2 slider3; //list
 
-@mixin img($img){
+@mixin img($img) {
     @each $i in $img {
         .img-#{$i} {
             background-image: url('images/#{$i}.jpg');
@@ -110,7 +110,46 @@ $img :slider1 slider2 slider3; //list
     }
 }
 
-@include img(a1 a2 a3);
+@include img(a1 a2 a3); // list
 
+
+
+$title :( // key : value,
+    h1 : 50px,
+    h2 : 42px,
+    h3 : 36px,
+    h4 : 30px,
+    h5: 24px,
+    span : 12px,
+    '.title' : 30px); // map
 
 // each loop h1 - h6
+
+@each $k , $v in $title {
+    #{$k} {
+        font-size: $v;
+    }
+}
+
+// 顏色
+
+$color : (
+    primary : #5188F6,
+    secondary: #AA72F8,
+    success : #4ADE80,
+);
+
+
+
+@mixin color($color) {
+    @each $k , $v in $color {
+        .#{$k} {
+            color: $v
+        }
+        .#{$k}-bg {
+            background-color: $v;
+        }
+    }
+}
+
+@include color($color);

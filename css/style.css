@@ -1326,4 +1326,56 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+span {
+  font-size: 12px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.primary {
+  color: #5188F6;
+}
+
+.primary-bg {
+  background-color: #5188F6;
+}
+
+.secondary {
+  color: #AA72F8;
+}
+
+.secondary-bg {
+  background-color: #AA72F8;
+}
+
+.success {
+  color: #4ADE80;
+}
+
+.success-bg {
+  background-color: #4ADE80;
+}
+
 /*# sourceMappingURL=style.css.map */
