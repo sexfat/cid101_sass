@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*css註解*/
+body {
+  padding: 0;
+  margin: 10px auto;
+  font-size: 16px;
+  background-color: #fff9c7;
+  color: #333;
+}
+
+.spacing-1 {
+  left: 300;
+}
+
+.wrapper .row header {
+  display: flex;
+  background-color: #eeeeee;
+}
+.wrapper .row header .logo {
+  width: 80px;
+  height: 80px;
+  background-color: #858585;
+}
+.wrapper .row header nav ul {
+  list-style: none;
+  display: flex;
+}
+.wrapper .row header nav ul li {
+  width: 120px;
+  margin: 0 10px;
+  background-color: #d6d6d6;
+}
+
+/*# sourceMappingURL=style.css.map */

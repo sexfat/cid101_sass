@@ -1,0 +1,56 @@
+/*css註解*/
+
+$fontSize: 16px; // 數字 註解
+$color : #333; //顏色
+$margin : 10px auto;
+$bgc : #fff9c7; //背景
+
+
+
+
+body {
+    //$a : 20 !global; 新版的sass不支援 區域變數轉全域，但可以執行，我們比較少用  
+    padding: 0;
+    margin: $margin;
+    font-size: $fontSize;
+    background-color: $bgc;
+    color: $color
+}
+
+$d : 300;
+$d : 150 !default;
+
+.spacing-1 {
+    left: $d
+}
+
+//header 
+
+.wrapper {
+    .row {
+        header {
+            display: flex;
+            background-color: #eeeeee;
+
+            .logo {
+                width: 80px;
+                height: 80px;
+                background-color: #858585;
+            }
+
+            nav {
+                ul {
+                    list-style: none;
+                    display: flex;
+
+                    li {
+                        width: 120px;
+                        margin: 0 10px;
+                        background-color: #d6d6d6;
+                    }
+                }
+            }
+        }
+    }
+
+}
