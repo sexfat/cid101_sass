@@ -18,7 +18,7 @@ nav {
     @include top(0px);
 }
 
-@mixin center(){
+@mixin center() {
     margin: auto;
 }
 
@@ -27,15 +27,32 @@ nav {
     @if $w ==100 {
         width: 100%;
     }
+
     @else if $w < 100 {
         width: $w *1%;
         @include center();
     }
+
     @else {
-        width: $w +px;
+        width: $w + px;
         @include center();
     }
 }
+
+//RWD mixin
+//平版
+@mixin t(){
+    @media screen and(max-width:$t) {
+       @content;
+    }
+}
+//手機
+@mixin m(){
+    @media screen and(max-width:$m) {
+        @content;
+    }
+}
+
 
 
 
