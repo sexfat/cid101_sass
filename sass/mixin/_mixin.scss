@@ -3,9 +3,10 @@
 
 //==== 位移 ===
 // @mixin top{}
-@mixin top($top){
+@mixin top($top , $left:null){
     position: relative;
     top: $top;
+    left: $left;
 }
 
 //呼叫 top
