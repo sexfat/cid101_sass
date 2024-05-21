@@ -82,3 +82,21 @@ nav {
 }
 
 
+//grid system
+
+@mixin grid($value) {
+    @for $i from 1 through $value {
+        .col-#{$i} {
+            width: math.div($i , $value) * 100%;
+        }
+    }
+}
+//手機板
+@mixin grid-m($value) {
+    @for $i from 1 through $value {
+        .col-sm-#{$i} {
+            width: math.div($i , $value) * 100%;
+        }
+    }
+}
+

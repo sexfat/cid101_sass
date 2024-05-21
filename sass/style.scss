@@ -32,6 +32,7 @@
 
 // 套件 
 // @import  'plugin/xxx'
+@import 'plugins/grid';
 
 
 
@@ -93,7 +94,15 @@ $d : 150 !default;
 
 }
 
+// push
+@include push(left, 100);
+@include push(top, 100);
 
+// each
+$img :slider1 slider2 slider3;
 
-@include push(left , 100);
-@include push(top , 100)
+@each $i in $img {
+    .img-#{$i} {
+        background-image: url('images/#{$i}.jpg');
+    }
+}
