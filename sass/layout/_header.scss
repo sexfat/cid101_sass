@@ -1,6 +1,5 @@
 @import 'nav';
 .wrapper {
-    .row {
         header {
             display: flex;
             background-color: #eeeeee;
@@ -11,7 +10,6 @@
                 height: 80px;
                 background-color: #858585;
             }
-        }
     }
 
 }

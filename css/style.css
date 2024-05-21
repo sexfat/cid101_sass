@@ -10,10 +10,6 @@ nav {
   top: 0px;
 }
 
-.row {
-  width: 100%;
-}
-
 nav ul {
   list-style: none;
   display: flex;
@@ -38,12 +34,12 @@ nav ul li a::before {
   content: " + ";
 }
 
-.wrapper .row header {
+.wrapper header {
   display: flex;
   background-color: #eeeeee;
   justify-content: space-between;
 }
-.wrapper .row header .logo {
+.wrapper header .logo {
   width: 80px;
   height: 80px;
   background-color: #858585;
@@ -66,6 +62,15 @@ body {
 .content {
   background-color: #fffd95;
   min-height: 500px;
+}
+
+.row {
+  width: 100%;
+}
+
+.row-fixed {
+  width: 1200px;
+  margin: auto;
 }
 
 .index .banner {

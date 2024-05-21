@@ -11,3 +11,10 @@ body {
    background-color: #fffd95;
    min-height: 500px;
 }
+
+.row {
+    @include layout(100);
+}
+.row-fixed {
+   @include layout($fixed);
+}
