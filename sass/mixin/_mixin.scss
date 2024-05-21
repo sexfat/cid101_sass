@@ -68,6 +68,17 @@ nav {
 // @include bp(576px){}
 
 
+// push 推區塊
+//@include push(left , 100);
+// @include push(top , 100)
 
+@mixin push($dir , $value) {
+    @for $i from 1 through $value {
+        .#{$dir}-#{$i} {
+            position: relative;
+            #{$dir}: $i + px;
+        }
+    }
+}
 
 

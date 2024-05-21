@@ -93,14 +93,7 @@ $d : 150 !default;
 
 }
 
-@mixin push($dir , $value) {
-    @for $i from 1 through $value {
-        .#{$dir}-#{$i} {
-            position: relative;
-            #{$dir}: $i + px;
-        }
-    }
-}
+
 
 @include push(left , 100);
 @include push(top , 100)
