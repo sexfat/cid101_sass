@@ -20,6 +20,9 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #1010a5;
 }
+nav ul li a::before {
+  content: " + ";
+}
 
 .wrapper .row header {
   display: flex;

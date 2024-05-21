@@ -20,6 +20,10 @@ nav {
                 &:hover {
                     background-color: darken($primary , 20); //sass 內建函式
                 }
+                &::before {
+                   content: ' + ';
+
+                }
             }
         }
     }
