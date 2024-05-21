@@ -76,3 +76,10 @@ $d : 150 !default;
 .light {
       background-color: lighten( #000 , 100);
 }
+
+//  數字運算函式
+.number {
+   font-size: ceil(100.4px) ;
+   font-size: round(100.5px) ;
+   font-size: floor(100.4px) ;
+}
